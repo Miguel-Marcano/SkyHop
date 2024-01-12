@@ -32,7 +32,7 @@ function SelectAutoWidth() {
           <MenuItem value={22}>Example 2</MenuItem>
         </Select>
       </FormControl>
-      <AccessTimeIcon style={{marginLeft: '1%', marginTop: '2%'}}/>
+      <AccessTimeIcon style={{marginLeft: '1%', marginTop: '10%'}}/>
     </div>
   );
 }

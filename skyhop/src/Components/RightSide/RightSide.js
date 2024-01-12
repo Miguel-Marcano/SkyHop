@@ -23,12 +23,12 @@ function RightSide() {
                 <FormControlLabel value="No" control={<Radio />} label="No" />
             </RadioGroup>
         </FormControl>
-        <Divider />
+        <Divider style={{width: '50%', marginTop: '10px', marginBottom: '10px'}}/>
         <header className="styleRight">
                 <p>Location Checking:</p>
                 <p className="subLocation">All Available!</p>
         </header>
-        <Divider />
+        <Divider style={{width: '50%', marginTop: '10px', marginBottom: '10px'}}/>
         <FormControl>
             <FormLabel className="styleRight" id="demo-row-radio-buttons-group-label">Client:</FormLabel>
             <RadioGroup
@@ -43,25 +43,25 @@ function RightSide() {
         <Box sx={{ width: '100%' }}>
             <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                 <Grid item xs={6}>
-                    <>Testing Center 1</>
+                    <p style={{marginTop: '25px'}}>Testing Center 1</p>
                 </Grid>
                 <Grid item xs={6}>
                     <SelectAutoWidth />
                 </Grid>
                 <Grid item xs={6}>
-                <>Testing Center 2</>
+                    <p style={{marginTop: '25px'}}>Testing Center 2</p>
                 </Grid>
                 <Grid item xs={6}>
                     <SelectAutoWidth />
                 </Grid>
                 <Grid item xs={6}>
-                    <>Testing Center 3</>
+                    <p style={{marginTop: '25px'}}>Testing Center 3</p>
                 </Grid>
                 <Grid item xs={6}>
                     <SelectAutoWidth />
                 </Grid>
                 <Grid item xs={6}>
-                <>Testing Center 4</>
+                    <p style={{marginTop: '25px'}}>Testing Center 4</p>
                 </Grid>
                 <Grid item xs={6}>
                     <SelectAutoWidth />

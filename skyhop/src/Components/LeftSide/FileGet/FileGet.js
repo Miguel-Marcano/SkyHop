@@ -4,6 +4,7 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import { styled } from '@mui/material/styles';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
+import Button from '@mui/material/Button';
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -68,7 +69,7 @@ class FileGet extends Component {
  
     render() {
         return (
-            <Box sx={{ width: '100%' }}>
+            <Box sx={{ width: '100%', marginLeft: '10px'}}>
                 <Item>
                     <div>
                         <InsertDriveFileIcon />
@@ -78,9 +79,9 @@ class FileGet extends Component {
                                 type="file"
                                 onChange={this.onFileChange}
                             />
-                            <button onClick={this.onFileUpload}>
-                                Upload!
-                            </button>
+                            <Button variant="contained" onClick={this.onFileUpload}>
+                                Upload Manifest
+                            </Button>
                         </div>
                     </div>
                 </Item>

@@ -3,25 +3,27 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import { blue } from '@mui/material/colors';
+import './Select.css';
 
 function SelectAutoWidthLeft() {
-  const [client, setClient] = React.useState('');
+  const [name, setName] = React.useState('');
 
   const handleChange = (event) => {
-    setClient(event.target.value);
+    setName(event.target.value);
   };
 
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 350 }}>
-        <InputLabel id="demo-simple-select-autowidth-label">Select Import Name</InputLabel>
+      <FormControl sx={{ m: 1, minWidth: '99%' }}>
+        <InputLabel id="demo-simple-select-autowidth-label-left">Select Import Name</InputLabel>
         <Select
           labelId="demo-simple-select-autowidth-label"
           id="demo-simple-select-autowidth"
-          value={client}
+          value={name}
           onChange={handleChange}
-          autoWidth
-          label="Client"
+          autoWidthS
+          label="Name"
         >
           <MenuItem value="">
             <em>None</em>

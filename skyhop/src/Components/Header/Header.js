@@ -1,15 +1,17 @@
 import './Header.css';
 import Divider from '@mui/material/Divider';
 import Box from '@mui/material/Box';
+import DisabledByDefaultIcon from '@mui/icons-material/DisabledByDefault';
 
 function Header() {
     return(
-        <Box sx={{ flexGrow: 1, width: '20%', marginLeft: '39%' }}>
-            <header className="style">
-                <p>Document Upload</p>
-            </header>
-            <Divider variant="middle"  />
+        <>
+        <DisabledByDefaultIcon style={{position: 'absolute', marginLeft: '4%'}}/>
+        <Box sx={{ flexGrow: 1, width: '20%', marginLeft: '39%', marginBottom: '5px'}}>
+            <p className="styleHeader">Document Upload</p>
+            <Divider variant="middle" style={{ marginBottom: '15px' }} />
         </Box>
+        </>
     );
 }
 
