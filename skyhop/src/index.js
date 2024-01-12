@@ -5,9 +5,8 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
-import RightSide from './Components/RightSide/RightSide';
 import MainGrid from './Components/MainGrid/MainGrid';
-import FileGet from './Components/LeftSide/FileGet/FileGet';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

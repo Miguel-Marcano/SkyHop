@@ -1,8 +1,9 @@
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import RightSide from '../RightSide/RightSide';
-import FileGet from '../LeftSide/FileGet/FileGet';
 import LeftSide from '../LeftSide/LeftSide';
+
+//The main grid contain both of the main components, the left side and the right side. For simplicity and a cleaner code I decided to to separate the main grid from other components.
 
 function MainGrid() {
     return (

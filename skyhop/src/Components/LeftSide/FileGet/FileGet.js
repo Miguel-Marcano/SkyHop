@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { Component } from "react";
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -6,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import Button from '@mui/material/Button';
 
+//Since I don't have any destination for the selected file, just the implementation to select the file and show the description
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -24,16 +24,6 @@ class FileGet extends Component {
             selectedFile: event.target.files[0],
         });
     };
- 
-    //onFileUpload = () => {
-        //const formData = new FormData();
-        //formData.append(
-            //"myFile",
-            //this.state.selectedFile,
-            //this.state.selectedFile.name
-        //);
-        //axios.post("api/uploadfile", formData);
-    //};
  
     fileData = () => {
         if (this.state.selectedFile) {

@@ -9,6 +9,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import './RightSide.css';
 
+//Function to store some logic and other components that will take part of the right side of the main grid
 function RightSide() {
     return(
         <>

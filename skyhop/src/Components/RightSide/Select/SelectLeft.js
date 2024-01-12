@@ -3,7 +3,6 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import { blue } from '@mui/material/colors';
 import './Select.css';
 
 function SelectAutoWidthLeft() {
@@ -13,6 +12,7 @@ function SelectAutoWidthLeft() {
     setName(event.target.value);
   };
 
+  //MUI component to create the drop down menu. Some sample text was display here, some style change dude the specification. A better implemetation on the future could be create a main select component that could take multiple cases and don't have redundant code.
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: '99%' }}>

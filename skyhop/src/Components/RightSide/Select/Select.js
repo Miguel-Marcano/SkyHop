@@ -12,6 +12,7 @@ function SelectAutoWidth() {
     setClient(event.target.value);
   };
 
+  //MUI component to create the drop down menu. Some sample text was display here
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: 150 }}>

@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import './LeftSide.css';
 
+//Function to store some logic and other components that will take part of the left side of the main grid
 function LeftSide() {
     return(
         <>
@@ -24,6 +25,7 @@ function LeftSide() {
                 <p className="subLocationLeft">No Elapsed Dates!</p>
         </header>
         <Divider style={{width: '50%', marginLeft: '10px', marginTop: '10px', marginBottom: '10px'}}/>
+        {/* Box to achive the horizontality of the toggle, divider and the icon with the text  */}
         <Box
       sx={{
         display: 'flex',
